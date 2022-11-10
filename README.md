@@ -1,7 +1,5 @@
-# ASR
-
-> Speech recognizes sensitive words
-
+# ASR 
+Speech recognizes sensitive words
 > python 语音识别敏感词
 
 构建步骤:
@@ -117,47 +115,3 @@
 > speech_recognition 默认识别英文，是不支持中文的，需要在Sphinx语音识别工具包里面下载对应的 普通话包 和 语言模型 。<https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/>
 
 将zh-CN目录丢进`../Lib/site-packages/speech_recognition`。
-
-```
-/* ====================================================================
- * Copyright (c) 2019 Alpha Cephei Inc. All rights
- * reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in
- *    the documentation and/or other materials provided with the
- *    distribution.
- *
- * THIS SOFTWARE IS PROVIDED BY ALPHA CEPHEI INC. ``AS IS'' AND.
- * ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,.
- * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
- * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ALPHA CEPHEI INC.
- * NOR ITS EMPLOYEES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT.
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,.
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY.
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT.
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE.
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- * ====================================================================
- *
- */
-
-This directory contains Mandarin Chinese model trained with latest
-sphinxtrain from aishell dataset.
-
-Dictionary is derived from
-https://www.mdbg.net/chinese/dictionary?page=cc-cedict CEDICT with some
-rare phones collapsed
-
-One have to train a proper language model for this.
-```
-
