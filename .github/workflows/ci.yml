@@ -26,8 +26,4 @@ jobs:
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm install -D vuepress@next
-      - run: echo 'node_modules' >> .gitignore
-      - run: echo '.temp' >> .gitignore
-      - run: echo '.cache' >> .gitignore
       - run: npm run docs:build
