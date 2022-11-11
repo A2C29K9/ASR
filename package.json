@@ -1,24 +1,24 @@
 {
-    "name": "asr",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "docs:dev": "vuepress dev docs",
-      "docs:build": "vuepress build docs"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/cypress0522/ASR.git"
-    },
-    "author": "Hsiang Nianian",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/cypress0522/ASR/issues"
-    },
-    "homepage": "https://github.com/cypress0522/ASR#readme",
-    "devDependencies": {
-      "vuepress": "^2.0.0-beta.53"
-    }
+  "name": "asr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cypress0522/ASR.git"
+  },
+  "author": "Hsiang Nianian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cypress0522/ASR/issues"
+  },
+  "homepage": "https://github.com/cypress0522/ASR#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.53"
   }
+}

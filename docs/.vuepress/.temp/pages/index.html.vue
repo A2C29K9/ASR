@@ -1,6 +1,5 @@
 <template><div><h1 id="speech-recognizes-sensitive-words" tabindex="-1"><a class="header-anchor" href="#speech-recognizes-sensitive-words" aria-hidden="true">#</a> Speech recognizes sensitive words</h1>
 <h2 id="语音转文本转语音" tabindex="-1"><a class="header-anchor" href="#语音转文本转语音" aria-hidden="true">#</a> 语音转文本转语音</h2>
-<p>构建步骤:</p>
 <h3 id="安装依赖" tabindex="-1"><a class="header-anchor" href="#安装依赖" aria-hidden="true">#</a> 安装依赖+</h3>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>pip <span class="token function">install</span> numpy
 <span class="token comment"># 数学运算库</span>
