@@ -175,7 +175,7 @@ plt.show()
 
 您将能够看到输出图形和为上述音频信号提取的数据，如此处图像所示
 
-![可视化音频信号](images/1668101695246.png)
+![可视化音频信号](https://www.codingdict.com/static/assets/tutorials/ai/py_ai/visualizing_audio_signals.jpg)
 
 ```bash
 Signal shape: (132300,)
@@ -278,7 +278,7 @@ plt.show()
 
 您可以观察上面代码的输出图，如下图所示
 
-![表征音频信号](/images/1668101728419.png)
+![表征音频信号](https://www.codingdict.com/static/assets/tutorials/ai/py_ai/characterizing_audio_signal.jpg)
 
 ### 生成单调音频信号
 
@@ -343,7 +343,7 @@ plt.show()
 
 您可以观察到如下图所示的情节
 
-![1668101900599](images/1668101900599.png)
+![1668101900599](https://www.codingdict.com/static/assets/tutorials/ai/py_ai/generating_monotone_audio_signal.jpg)
 
 ### 生成单调音频信号
 
@@ -421,9 +421,9 @@ plt.show()
 
 根据上述步骤，您可以观察到以下输出：图1表示MFCC，图2表示滤波器组
 
-![1668101913458](images/1668101913458.png)
+![1668101913458](https://www.codingdict.com/static/assets/tutorials/ai/py_ai/feature_extraction_from_speech.jpg)
 
-![1668101919353](images/1668101919353.png)
+![1668101919353](https://www.codingdict.com/static/assets/tutorials/ai/py_ai/filter_bank.jpg)
 
 ### 语音特征提取
 
