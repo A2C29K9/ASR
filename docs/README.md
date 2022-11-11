@@ -11,6 +11,8 @@ order: 10
 ### 安装依赖+
 
 ```bash
+pip install pyaudio
+# 音频剪辑库
 pip install numpy
 # 数学运算库
 pip install matplotlib
