@@ -17,7 +17,7 @@
     "bugs": {
       "url": "https://github.com/cypress0522/ASR/issues"
     },
-    "homepage": "https://github.com/cypress0522/ASR#readme",
+    // "homepage": "https://github.com/cypress0522/ASR#readme",
     "devDependencies": {
       "vuepress": "^2.0.0-beta.53"
     }
