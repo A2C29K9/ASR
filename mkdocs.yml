@@ -71,18 +71,18 @@ theme:
 plugins:
   - hello-dolly
   - search
-  - mdoctag
+  # - mdoctag
   - git-revision-date
   - git-authors:
       show_contribution: true
       show_line_count: true
       count_empty_lines: true
   - rss
-  - print-site
+  # - print-site
   - tooltips
-  - categories
-  - git-show-history-log:
-      max_number_of_commits: 3
+  # - categories
+  # - git-show-history-log:
+  #     max_number_of_commits: 3
 # Customization
 # extra:
 #   analytics:
