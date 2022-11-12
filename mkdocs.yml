@@ -71,7 +71,7 @@ theme:
 plugins:
   - hello-dolly
   - search
-  # - mdoctag
+  - mdoctag
   - git-revision-date
   - git-authors:
       show_contribution: true
@@ -81,8 +81,8 @@ plugins:
   # - print-site
   - tooltips
   # - categories
-  # - git-show-history-log:
-  #     max_number_of_commits: 3
+  - git-show-history-log:
+      max_number_of_commits: 3
 # Customization
 # extra:
 #   analytics:
