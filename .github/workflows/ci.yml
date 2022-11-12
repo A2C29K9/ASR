@@ -16,20 +16,14 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material
-      - run: pip install git+https://github.com/fmaida/hello-dolly-mkdocs-plugin
-      - run: pip install git+https://github.com/srymh/MkdocsTagPlugin
-      - run: pip install mkdocs-git-revision-date-plugin
-      - run: pip install mkdocs-git-authors-plugin
-      - run: pip install mkdocs-rss-plugin
-      - run: pip install mkdocs-print-site-plugin
-      - run: pip install mkdocs-tooltips
-      - run: pip install mkdocs-categories-plugin
-      - run: pip install mkdocs-git-show-history-log-plugin
-      - run: pip install mkdocs-video
-      - run: pip install mkdocs-izsam-video
-      - run: mkdocs gh-deploy --force
-      # git push -f git@github.com:cypress0522/ssJSKFJDJ.git gh-pages
-      # mkdocs gh-deploy --force
+          node-version: '14'
+      - uses: crazy-max/ghaction-github-pages@v2
+        with:
+          # 部署到 gh-pages 分支
+          target_branch: gh-pages
+          # 部署目录为 VuePress 的默认输出目录
+          build_dir: docs/.vuepress/dist
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run docs:build
