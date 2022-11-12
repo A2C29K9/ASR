@@ -1,0 +1,156 @@
+# Project information
+site_name: ASR
+site_url: https://asr035.netlify.app/
+site_author: MIZUKORA
+site_description: >-
+  Speech recognizes sensitive words
+# Repository
+repo_url: https://github.com/cypress0522/ASR
+repo_name: cypress0522/ASR
+
+# Copyright
+copyright: Copyright &copy; 2018 - 2022 简律纯
+# Configuration
+theme:
+  name: null
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  favicon: assets/images/ico.png
+
+  # Default values, taken from mkdocs_theme.yml
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon: 
+    logo: material/book
+
+# Plugins
+plugins:
+  - hello-dolly
+  - search
+  - mdoctag
+  - git-revision-date
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: true
+  - rss
+  - print-site
+  - tooltips
+  - categories
+  - git-show-history-log:
+      max_number_of_commits: 3
+# Customization
+# extra:
+#   analytics:
+#     provider: google
+#     property: UA-XXXXXXXX-X 
+#     feedback:
+#       title: 这篇文章有用吗？
+#       ratings:
+#         - icon: material/thumb-up-outline
+#           name: 太nm有用了，我要三连！
+#           data: 1
+#           note: >-
+#             你真可爱！
+#         - icon: material/thumb-down-outline
+#           name: 写的什么？
+#           data: 0
+#           note: >- 
+#             你tmd也太可爱了吧。
+#             点击<a href="https://cypress0522.github.io/about" target="_blank" rel="noopener">链接</a>来提交你的建议吧...
+#   social:
+#     - icon: fontawesome/solid/paper-plane
+#       link: mailto:hsiangnianian@outlook.com
+#     - icon: fontawesome/brands/github
+#       link: https://www.github.com/ssJSKFJDJ
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences
+
+# extra_css:
+
+# Page tree
+nav:
+  - Home: index.md
