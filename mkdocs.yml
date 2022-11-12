@@ -69,10 +69,10 @@ theme:
 
 # Plugins
 plugins:
-  - tags
+  # - tags
   - hello-dolly
   - search
-  - mdoctag
+  # - mdoctag
   - git-revision-date
   - git-authors:
       show_contribution: true
@@ -82,8 +82,8 @@ plugins:
   # - print-site
   - tooltips
   # - categories
-  - git-show-history-log:
-      max_number_of_commits: 3
+  # - git-show-history-log:
+      # max_number_of_commits: 3
 # Customization
 # extra:
 #   analytics:
@@ -160,3 +160,4 @@ nav:
   - SR: SR.md # 语音识别算法,Yu Zhe
   - AM: AM.md # 声学模型,郭
   - LM: LM.md # 语言模型,江
+  - LOGS: LOGS.md
