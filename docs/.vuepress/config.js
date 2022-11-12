@@ -1,7 +1,6 @@
-import { defineUserConfig } from 'vuepress'
-
-export default defineUserConfig({
-  lang: 'zh-CN',
-  title: 'ASR',
-  description: 'Speech recognizes sensitive words',
-})
+module.exports = {
+  title: 'ASR',  // 设置网站标题
+  dest: './dist',    // 设置输出目录
+  base: '/', // 设置站点根路径
+  repo: 'https://github.com/cypress0522/ASR' // 添加 github 链接
+}
