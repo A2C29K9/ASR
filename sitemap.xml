@@ -5,4 +5,34 @@
          <lastmod>2022-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://asr035.netlify.app/AM/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://asr035.netlify.app/CODEC/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://asr035.netlify.app/LM/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://asr035.netlify.app/LOGS/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://asr035.netlify.app/MFCC/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://asr035.netlify.app/SR/</loc>
+         <lastmod>2022-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
