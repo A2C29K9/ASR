@@ -9,7 +9,7 @@ template: overrides/main.html
 
 ## 语音转文本转语音
 
-### 安装依赖+
+### 安装依赖
 
 ```bash
 pip install pyaudio
