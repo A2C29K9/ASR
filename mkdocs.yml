@@ -153,4 +153,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: index.md # 导引
+  - CODEV: CODEC.md # 预处理,简律纯
+  - MFCC: MFCC.md # 特征参数提取, 简律纯
+  - SR: SR.md # 语音识别算法,Yu Zhe
+  - AM: AM.md # 声学模型,郭
+  - LM: LM.md # 语言模型,江
