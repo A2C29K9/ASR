@@ -167,3 +167,6 @@ nav:
   - 语音识别算法: 语音识别算法.md # 语音识别算法,Yu Zhe
   - 更新记录: LOGS.md
   - To-DO&TimeTable: To-DO&TimeTable.md
+  - Lastcreated.xml: feed_rss_created.xml
+  - Lastupdated.xml: feed_rss_updated.xml
+  - print-site: print_page
