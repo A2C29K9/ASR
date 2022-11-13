@@ -19,7 +19,7 @@
     
     
       
-        <title>ASR - Automatic Speech Recognition</title>
+        <title>导引 - Automatic Speech Recognition</title>
       
     
     
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ASR
+              导引
             
           </span>
         </div>
@@ -316,6 +316,18 @@
   <li class="md-tabs__item">
     <a href="../To-DO%26TimeTable/" class="md-tabs__link">
       To-DO&TimeTable
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../feed_rss_created.xml" class="md-tabs__link">
+      RSS
     </a>
   </li>
 
@@ -794,6 +806,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feed_rss_created.xml" class="md-nav__link">
+        RSS
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1027,7 +1054,7 @@
 <h3 id="_2">引言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>这是一个关于语音识别（Speech Recognition）检测敏感词的项目。</p>
 <p>该项目粗分为两个系统：
-      1.语音处理系统 
+      1.语音处理系统
       2.反馈处理系统</p>
 <p>一般而言：反馈处理系统即检测敏感词以后所进行的反馈调节，是由用户（产品使用者）个性化设置的，但为了方便用户使用，我们会提供几个可供调用的方法（例如API服务或者在线检测网站）；语音处理系统是本项目的核心组成，由语音信号采集、语音信号预处理、语音信号特征参数提取、向量量化（VQ）和语音识别（SR）组成。</p>
 <p>研究语音识别检测敏感词可以更好的整顿网络视频环境，提高全民素养，为视频平台提供良好的不文明行为打击方法，为网络游戏平台创造更健康更文明的游戏生态。</p>
@@ -1050,13 +1077,15 @@
 <h3 id="_9">计划目标：<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <p>该项目的用户是网络平台（短视频、线上多人游戏等），防网络暴力于未然，最终目标是搭建一个可以支持用户自定义反馈系统的Api以及程序，达到检测网络敏感词并给出解决方案的地步。</p>
 <h3 id="_10">思路方法：<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<p>根据语音识别的五大步骤，下面给出一个语音识别流程的举例（只是形象表述，不是真实数据和过程）：
-   1. 语音信号：PCM文件等（我是机器人）
-   2. 特征提取：提取特征向量[1 2 3 4 56 0 ...]
-   3. 声学模型：[1 2 3 4 56 0]-&gt; w o s i j i q i r n
-   4. 字典：窝：w o；我：w o； 是：s i； 机：j i； 器：q i； 人：r n；级：j i；忍：r n
-   5. 语言模型：我：0.0786， 是： 0.0546，我是：0.0898，机器：0.0967，机器人：0.6785
-   6. 输出文字：我是机器人</p>
+<p>根据语音识别的五大步骤，下面给出一个语音识别流程的举例（只是形象表述，不是真实数据和过程）：</p>
+<ol>
+<li>语音信号：PCM文件等（我是机器人）</li>
+<li>特征提取：提取特征向量[1 2 3 4 56 0 ...]</li>
+<li>声学模型：[1 2 3 4 56 0]-&gt; w o s i j i q i r n</li>
+<li>字典：窝：w o；我：w o； 是：s i； 机：j i； 器：q i； 人：r n；级：j i；忍：r n</li>
+<li>语言模型：我：0.0786， 是： 0.0546，我是：0.0898，机器：0.0967，机器人：0.6785</li>
+<li>输出文字：我是机器人</li>
+</ol>
 <h3 id="_11">项目组织及进度安排：<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p>本项目预期一年内完成，年度研究计划如下：</p>
 <p>（1）2022.11-2023.02：</p>
@@ -1098,7 +1127,7 @@
    （2）应用于各大短视频平台、线上交友平台。
    （3）应用于各类线上游戏平台的语音聊天功能。</p>
 <h3 id="_20">社会效益<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>  该项目的研究有助于政府与网络平台整顿网络暴力（视频或语音对话中的言语辱骂等不文明行为），建造更加文明健康的网络环境。
+<div class="highlight"><pre><span></span><code>该项目的研究有助于政府与网络平台整顿网络暴力（视频或语音对话中的言语辱骂等不文明行为），建造更加文明健康的网络环境。
 </code></pre></div>
 <h2 id="_21">六、项目财务预算<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
 <p>（包括经费预算及经费支出明细等）</p>
