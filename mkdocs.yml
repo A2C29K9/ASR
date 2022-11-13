@@ -154,10 +154,15 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md # 导引
-  - CODEV: CODEC.md # 预处理,简律纯
-  - MFCC: MFCC.md # 特征参数提取, 简律纯
-  - SR: SR.md # 语音识别算法,Yu Zhe
-  - AM: AM.md # 声学模型,郭
-  - LM: LM.md # 语言模型,江
-  - LOGS: LOGS.md
+  - 开始:
+    - 导引: Guide.md # 导引
+    - 语音信号预处理: 语音信号预处理_Guide.md
+    - 语音信号特征参数提取: 语音信号特征参数提取_Guide.md
+    - 声学模型训练: 声学模型训练_Guide.md
+    - 语言模型训练: 语言模型训练_Guide.md
+  - 语音信号预处理: 语音信号预处理.md # 预处理,简律纯
+  - 语音信号特征参数提取: 语音信号特征参数提取.md # 特征参数提取, 简律纯
+  - 语音识别算法: 语音识别算法.md # 语音识别算法,Yu Zhe
+  - 声学模型训练: 声学模型训练.md # 声学模型,郭
+  - 语言模型训练: 语言模型训练.md # 语言模型,江
+  - 日志: LOGS.md
