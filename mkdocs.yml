@@ -155,7 +155,7 @@ markdown_extensions:
 # Page tree
 nav:
   - 开始:
-    - 导引: Guide.md # 导引
+    - 导引: index.md # 导引
     - 语音信号预处理: 语音信号预处理_Guide.md
     - 语音信号特征参数提取: 语音信号特征参数提取_Guide.md
     - 声学模型训练: 声学模型训练_Guide.md
