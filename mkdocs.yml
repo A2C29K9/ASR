@@ -79,7 +79,7 @@ plugins:
       show_line_count: true
       count_empty_lines: true
   - rss
-  # - print-site
+  - print-site
   - tooltips
   # - categories
   # - git-show-history-log:
