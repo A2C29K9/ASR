@@ -60,29 +60,14 @@ template: overrides/main.html
 
 根据语音识别的五大步骤，下面给出一个语音识别流程的举例（只是形象表述，不是真实数据过程）：
 ```mermaid
-flowchart TB
-    A["字典\n[1 2 3 4 56 0]-> w o s i j i q i r n"]-->|字或词与音素的对应|B
-    subgraph 第四步
-    B[语音解码和搜索算法]
-    end
-    subgraph 特征提取
-    D["MFSC\n提取特征向量[1 2 3 4 56 0 ...]"]
-    end
-    subgraph 第一步
-    C["语音信号\nPCM文件等(我是机器人)"]
-    end
-    subgraph 第二步
-    E[语音数据库]-->F[声学模型训练]
-    F-->G["声学模型\n[1 2 3 4 56 0]-> w o s i j i q i r n"]
-    end
-    subgraph 第三步
-    文本数据库-->语音模型训练-->H["语言模型\n[1 2 3 4 56 0]-> w o s i j i q i r n"]
-    end
-    B-->I["文本输出\n我是机器人"]
-    第一步-->|语音输入|特征提取
-    第二步-->|模型导入|特征提取
-    特征提取-->|传入向量|B
-    第三步-->|得到单个字或词相互关联的概率|B
+graph TB
+    A("语音信号\nPCM文件等（我是机器人）")-->|特征提取|B["特征向量[1 2 3 4 56 0 ...]"]
+    C("语音识别算法")
+    C-->|输出文字|D("我是机器人")
+    01[语音数据库]-->|特征提取|B
+    B-->|声学模型训练|声学模型-->C
+    字典-->C
+    文本数据库-->|语言模型训练|语言模型-->C
 ```  
 ![](https://mermaid.ink/img/pako:eNqlU99v0lAU_ldu7pMmg_j7gYclwkR9IDGZb5SHSjtBRztLyWLGkqESII7BfgAqRJnLJjEtJWHRrlvwn-m97f4LT3drw2amJja5SXPud777nXO-s4LTsiDiCF5YlJfTGV5R0eMoJyH47iY5TPQOKZscJyWvoxvoJrqFbt9B11KhWbSMZJRHWfQMzgs4CpI4nAqFZouQQ6tt16jb5sbpp7Fz2Hc-vCHGEbF2ij51vvDkqcIvZZCjaaTbpfo-i0eTrqFDjvtlz-mXyNY6bfacw8_OsEPHrRTDiJJwkaR2RCYl2miSRptdzYH0RHw-BsJZmEFIc_O00jhXCgqHwykQfim3ptnmWiAwBsRMov1jlzS-wwOPYgnartjH3xy9doVWN-k7g_Ys8n5gW9bVvzBb6wHzPb902hrR-pBY214v40myNyL6AR3sko9v3aHuHL_2CeNwfd-b0BTg3-f0x3JrgSgojPa0QBI86Yuc0gPBB6wr7mDtP3VEgewhkLF33ck2qVjeDM93NcgLhuPZzncO5JT3i79bImi3h2UyiXFyCXYq4sHtkz4AmXt-WTjo1JnlJx1SHZF6yza_BvZ3uqZtbZHy2C3twAbQg1fORqUYxTM4Jyo5PivA1q14ZBxWM2JO5HAEfgVeec5hTloFHF9Q5fmXUhpHVKUgzuDCksCr4lyWh2HlcGSBX8xDVBSyqqwk2BqfbfPqT1UPy5k?type=png)
 
