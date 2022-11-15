@@ -65,9 +65,11 @@ graph TB
     C("语音识别算法")
     C-->|输出文字|D("我是机器人")
     01[语音数据库]-->|特征提取|B
-    B-->|声学模型训练|声学模型-->C
-    字典-->C
-    文本数据库-->|语言模型训练|语言模型-->C
+    B-->|声学模型训练|05["声学模型：\n[1 2 3 4 56 0]-> w o s i j i q i r n"]-->C
+    04-->C
+    文本数据库-->|语言模型训练|03-->C
+    03["语言模型:\n我：0.0786， \n是： 0.0546，\n我是：0.0898，\n机器：0.0967，\n机器人：0.6785"]
+    04["字典：\n窝：w o；\n我：w o； \n是：s i； \n机：j i； \n器：q i； \n人：r n；\n级：j i；\n忍：r n"]
 ```  
 ![](https://mermaid.ink/img/pako:eNqlU99v0lAU_ldu7pMmg_j7gYclwkR9IDGZb5SHSjtBRztLyWLGkqESII7BfgAqRJnLJjEtJWHRrlvwn-m97f4LT3drw2amJja5SXPud777nXO-s4LTsiDiCF5YlJfTGV5R0eMoJyH47iY5TPQOKZscJyWvoxvoJrqFbt9B11KhWbSMZJRHWfQMzgs4CpI4nAqFZouQQ6tt16jb5sbpp7Fz2Hc-vCHGEbF2ij51vvDkqcIvZZCjaaTbpfo-i0eTrqFDjvtlz-mXyNY6bfacw8_OsEPHrRTDiJJwkaR2RCYl2miSRptdzYH0RHw-BsJZmEFIc_O00jhXCgqHwykQfim3ptnmWiAwBsRMov1jlzS-wwOPYgnartjH3xy9doVWN-k7g_Ys8n5gW9bVvzBb6wHzPb902hrR-pBY214v40myNyL6AR3sko9v3aHuHL_2CeNwfd-b0BTg3-f0x3JrgSgojPa0QBI86Yuc0gPBB6wr7mDtP3VEgewhkLF33ck2qVjeDM93NcgLhuPZzncO5JT3i79bImi3h2UyiXFyCXYq4sHtkz4AmXt-WTjo1JnlJx1SHZF6yza_BvZ3uqZtbZHy2C3twAbQg1fORqUYxTM4Jyo5PivA1q14ZBxWM2JO5HAEfgVeec5hTloFHF9Q5fmXUhpHVKUgzuDCksCr4lyWh2HlcGSBX8xDVBSyqqwk2BqfbfPqT1UPy5k?type=png)
 
